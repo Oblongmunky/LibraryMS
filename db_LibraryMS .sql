@@ -266,7 +266,7 @@ BEGIN
 	INNER JOIN Book_Loans bl ON r.CardNo = bl.CardNo
 	INNER JOIN Books b ON b.BookId = bl.BookId
 	INNER JOIN Library_Branch lb ON lb.BranchId = bl.BranchId
-	WHERE lb.BranchName = 'Sharpstown' AND bl.DateDue = '08/10/17'
+	WHERE lb.BranchName = 'Sharpstown' AND bl.DateDue = '2018-08-05'
 	;
 
 	SELECT lb.BranchName, COUNT(*) AS 'Books Loaned'
