@@ -44,6 +44,25 @@ CREATE TABLE Book_Loans (
 	DateDue DATE NOT NULL
 )
 
+INSERT Publisher
+	(PublisherName, Address, Phone)
+	VALUES
+	('Picador USA', '16365 James Madison Highway Gordonsville, VA 22942', '888-330-8477'),
+	('Viking', 'New York City', '555-555-5551'),
+	('Baen Books', '100 Front Street Riverside, NJ 08075', '800-223-2336'),
+	('Alfred A. Knopf', 'New York City', 'N/A'),
+	('The Bodley Head', 'London', 'N/A'),
+	('Bantam Books', 'New York City', 'N/A'),
+	('George Allen & Unwin', 'Crows Nest', 'N/A'),
+	('Weird Tales', 'N/A', 'N/A'),
+	('Chapman & Hall', 'United Kingdom', 'N/A'),
+	('William Collins, Sons', 'Glasgow', 'N/A'),
+	('Warner Books', 'New York City', 'N/A'),
+	('J. B. Lippincott & Co.', 'Philadelphia', 'N/A'),
+	('Dell Publishing', 'New York City', 'N/A'),
+	('Houghton Mifflin', 'Boston', 'N/A'),
+	('Kevin Lain', 'N/A', 'N/A')
+
 INSERT Books
 	(BookID, Title, PublisherName)
 	VALUES
@@ -169,25 +188,6 @@ INSERT Book_Loans
 	(116, 4, 1004, '2018-08-14', '2018-09-11'),
 	(113, 4, 1004, '2018-08-14', '2018-09-11'),
 	(108, 4, 1004, '2018-08-14', '2018-09-11')
-
-INSERT Publisher
-	(PublisherName, Address, Phone)
-	VALUES
-	('Picador USA', '16365 James Madison Highway Gordonsville, VA 22942', '888-330-8477'),
-	('Viking', 'New York City', '555-555-5551'),
-	('Baen Books', '100 Front Street Riverside, NJ 08075', '800-223-2336'),
-	('Alfred A. Knopf', 'New York City', 'N/A'),
-	('The Bodley Head', 'London', 'N/A'),
-	('Bantam Books', 'New York City', 'N/A'),
-	('George Allen & Unwin', 'Crows Nest', 'N/A'),
-	('Weird Tales', 'N/A', 'N/A'),
-	('Chapman & Hall', 'United Kingdom', 'N/A'),
-	('William Collins, Sons', 'Glasgow', 'N/A'),
-	('Warner Books', 'New York City', 'N/A'),
-	('J. B. Lippincott & Co.', 'Philadelphia', 'N/A'),
-	('Dell Publishing', 'New York City', 'N/A'),
-	('Houghton Mifflin', 'Boston', 'N/A'),
-	('Kevin Lain', 'N/A', 'N/A')
 
 INSERT Book_Copies
 	(BookID, BranchID, Number_Of_Copies)
